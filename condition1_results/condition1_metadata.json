@@ -1,0 +1,63 @@
+{
+  "condition_id": "condition_1_agent_only",
+  "description": "Image-only, agent-only completion using existing Kitami Gomi AI Version 4 components. No user correction or clarification answer.",
+  "created_at": "2026-09-17T21:15:18.957179+09:00",
+  "area_id": "tabata",
+  "language_code": "en",
+  "runs_per_item": 50,
+  "first_item": 14,
+  "last_item": 21,
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "communication_policy": "Controlled experiment condition: no user communication is available.\nDo not return needs_clarification and do not ask the user a question.\nUsing only the supplied vision analysis, user context already present, and\nretrieved official evidence, produce the strongest evidence-supported final\nresult. Do not invent any unseen fact or municipal rule.\nWhen an unknown condition does not prevent an evidence-supported category,\nprovide the supported category and preserve the official conditional\npreparation or exception in the preparation steps.\nIf the supplied evidence cannot support any responsible decision at all,\nreturn unsupported rather than guessing.",
+  "python_version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "images": {
+    "I14": {
+      "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I14.jpg",
+      "filename": "I14.jpg",
+      "sha256": "f4960940fd43c6f7f28473de1e7cc796312d48208d2d6391f45a80e566a0ab5a"
+    },
+    "I15": {
+      "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I15.jpg",
+      "filename": "I15.jpg",
+      "sha256": "b77dac7d1f86e5c3249bdc726089c144cea5b48f7d2bfa05196c36e4f6c7e11b"
+    },
+    "I16": {
+      "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I16.jpg",
+      "filename": "I16.jpg",
+      "sha256": "9d3f5bbe96a4a0e7187e3a6d99dced3b5ef9fb2533050011d34016cf56691d9b"
+    },
+    "I17": {
+      "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I17.jpg",
+      "filename": "I17.jpg",
+      "sha256": "cd98ff4763898dcb427e5b76cbd0f43d184ccadee80b9cb42fa0c332f9a17580"
+    },
+    "I18": {
+      "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I18.jpg",
+      "filename": "I18.jpg",
+      "sha256": "f8529d43137da5cef06486b3262e1af09bb95b5fde070f2253c0cc12f85033b2"
+    },
+    "I19": {
+      "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I19.jpg",
+      "filename": "I19.jpg",
+      "sha256": "47af57c956919177dfad12c9e80042d7320624ce8a14b92ea608ee990cfc688c"
+    },
+    "I20": {
+      "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I20.jpg",
+      "filename": "I20.jpg",
+      "sha256": "fedb75339dce9f46c2e1529f7f693cabfe5df336833218161d1a80636172547d"
+    },
+    "I21": {
+      "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I21.jpg",
+      "filename": "I21.jpg",
+      "sha256": "bef3fde30f8121045f2c5019f3b3da0379342af02ed2fb94c64d66e7c3c13e94"
+    }
+  },
+  "scoring_included": false,
+  "ground_truth_used": false
+}
