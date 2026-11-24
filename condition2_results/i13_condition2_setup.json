@@ -1,0 +1,219 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I13",
+  "created_at": "2026-09-22T07:53:43.235120+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I13.jpg",
+    "filename": "I13.jpg",
+    "sha256": "d229365ebf381a93bd28d42fcdc18a19053efedb73fccc771ea2a5b7189013d3"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "business card holder with business cards",
+      "name_ja": "名刺入れと名刺",
+      "function": "to store and organize business cards",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "holder",
+        "name_en": "business card holder",
+        "name_ja": "名刺入れ",
+        "function": "to hold business cards",
+        "materials": [
+          "clear plastic"
+        ],
+        "visible_condition": [
+          "used",
+          "no visible damage"
+        ],
+        "separable": false,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "cards",
+        "name_en": "business cards",
+        "name_ja": "名刺",
+        "function": "to provide contact information",
+        "materials": [
+          "paper"
+        ],
+        "visible_condition": [
+          "stacked inside holder",
+          "appears unused or lightly used"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "plastic",
+        "paper"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "clean",
+        "no visible contamination"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately business card size for cards, holder size about 8 cm width, 5 cm height, 4 cm depth"
+    },
+    "uncertain_characteristics": [
+      "exact plastic type of holder unknown",
+      "presence of any internal adhesive or coatings on cards unknown"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "名刺入れ",
+        "名刺"
+      ],
+      "component_terms_ja": [
+        "プラスチック製名刺入れ",
+        "紙製名刺"
+      ],
+      "function_terms_ja": [
+        "名刺保管",
+        "名刺表示"
+      ],
+      "material_terms_ja": [
+        "プラスチック",
+        "紙"
+      ],
+      "condition_terms_ja": [
+        "汚れなし",
+        "内容なし"
+      ],
+      "general_rule_topics": [
+        "事業系廃棄物",
+        "紙ごみ",
+        "プラスチックごみ"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "communication_record": [
+    {
+      "type": "confirmation",
+      "content": "The initial interpretation was confirmed by the user."
+    },
+    {
+      "type": "additional_context",
+      "content": "card holder is made of plastic. cards are made of papers. the number of cards are small and size small too."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "card holder with cards",
+      "name_ja": "カードホルダーとカード",
+      "function": "to store and organize cards",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "holder",
+        "name_en": "card holder",
+        "name_ja": "カードホルダー",
+        "function": "to hold cards",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [],
+        "separable": false,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "cards",
+        "name_en": "cards",
+        "name_ja": "カード",
+        "function": "used for various purposes (information or identification)",
+        "materials": [
+          "paper"
+        ],
+        "visible_condition": [
+          "small number of cards",
+          "small size"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "plastic",
+        "paper"
+      ],
+      "recycling_marks": [],
+      "condition": [],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": null
+    },
+    "uncertain_characteristics": [],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "カードホルダー",
+        "カード"
+      ],
+      "component_terms_ja": [
+        "プラスチック製カードホルダー",
+        "紙製カード"
+      ],
+      "function_terms_ja": [
+        "カード保管",
+        "カード収納"
+      ],
+      "material_terms_ja": [
+        "プラスチック",
+        "紙"
+      ],
+      "condition_terms_ja": [],
+      "general_rule_topics": []
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\ncard holder is made of plastic. cards are made of papers. the number of cards are small and size small too.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}

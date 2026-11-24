@@ -1,0 +1,262 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I14",
+  "created_at": "2026-09-19T23:16:21.098557+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I14.jpg",
+    "filename": "I14.jpg",
+    "sha256": "f4960940fd43c6f7f28473de1e7cc796312d48208d2d6391f45a80e566a0ab5a"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "set of mini muddlers in retail packaging",
+      "name_ja": "ミニマドラーセット",
+      "function": "tools for stirring or mixing beverages",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "1",
+        "name_en": "multi-colored plastic mini muddlers",
+        "name_ja": "カラフルなプラスチック製ミニマドラー",
+        "function": "stirring or mixing drinks",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [
+          "used but not visibly damaged"
+        ],
+        "separable": true,
+        "contents_remaining": false,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "2",
+        "name_en": "clear plastic outer packaging",
+        "name_ja": "透明プラスチック製外装",
+        "function": "holds mini muddlers together and displays product",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [
+          "torn or damaged"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "3",
+        "name_en": "brown cardboard product box",
+        "name_ja": "茶色段ボール製商品箱",
+        "function": "contains and protects mini muddlers",
+        "materials": [
+          "cardboard"
+        ],
+        "visible_condition": [
+          "intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "plastic",
+        "cardboard"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "outer plastic packaging torn",
+        "box intact",
+        "muddlers appear used"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "box approximately 10 cm on each side"
+    },
+    "uncertain_characteristics": [
+      "no visible recycling mark on plastic packaging or muddlers",
+      "cleanliness or contamination of muddlers unknown",
+      "exact material type of plastic unknown"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "ミニマドラー",
+        "マドラーセット",
+        "飲料用かき混ぜ棒"
+      ],
+      "component_terms_ja": [
+        "プラスチック製マドラー",
+        "プラスチック包装",
+        "段ボール箱"
+      ],
+      "function_terms_ja": [
+        "飲料かき混ぜ",
+        "飲料用品",
+        "調理用具"
+      ],
+      "material_terms_ja": [
+        "プラスチック",
+        "段ボール",
+        "紙製品"
+      ],
+      "condition_terms_ja": [
+        "包装破損",
+        "中身あり",
+        "未使用または使用済み不明"
+      ],
+      "general_rule_topics": [
+        "家庭ごみ",
+        "プラスチック製容器包装",
+        "紙製品ごみ"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "communication_record": [
+    {
+      "type": "correction",
+      "content": "this is a custom made pen holder. the brown part is paper item. in front of it there is a plastic container part. and inside that container, there are some marker pens. so we have some paper box, plastic, and marker pen."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "custom made pen holder",
+      "name_ja": "カスタムペンホルダー",
+      "function": "holds pens and markers",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "1",
+        "name_en": "brown paper box",
+        "name_ja": "茶色の紙製ボックス",
+        "function": "outer structure or holder",
+        "materials": [
+          "paper"
+        ],
+        "visible_condition": [],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "2",
+        "name_en": "plastic container",
+        "name_ja": "プラスチック製容器",
+        "function": "container for pens",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [],
+        "separable": true,
+        "contents_remaining": true,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "3",
+        "name_en": "marker pens",
+        "name_ja": "マーカーペン",
+        "function": "writing or marking",
+        "materials": [],
+        "visible_condition": [],
+        "separable": true,
+        "contents_remaining": true,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "paper",
+        "plastic"
+      ],
+      "recycling_marks": [],
+      "condition": [],
+      "remaining_contents_visible": true,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": null
+    },
+    "uncertain_characteristics": [
+      "exact materials of marker pens unknown",
+      "recycling marks on components unknown",
+      "visible condition details unknown"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "ペンホルダー",
+        "筆記具ホルダー",
+        "文具入れ"
+      ],
+      "component_terms_ja": [
+        "紙製ボックス",
+        "プラスチック容器",
+        "マーカーペン"
+      ],
+      "function_terms_ja": [
+        "筆記具収納",
+        "文房具",
+        "ペン立て"
+      ],
+      "material_terms_ja": [
+        "紙",
+        "プラスチック",
+        "文具材料"
+      ],
+      "condition_terms_ja": [
+        "内容物あり",
+        "使用状況不明",
+        "汚れや損傷不明"
+      ],
+      "general_rule_topics": [
+        "家庭ごみ",
+        "プラスチック製容器包装",
+        "紙製品ごみ",
+        "文房具の廃棄"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\nthis is a custom made pen holder. the brown part is paper item. in front of it there is a plastic container part. and inside that container, there are some marker pens. so we have some paper box, plastic, and marker pen.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}

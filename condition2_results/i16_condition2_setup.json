@@ -1,0 +1,274 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I16",
+  "created_at": "2026-09-20T07:24:27.684182+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I16.jpg",
+    "filename": "I16.jpg",
+    "sha256": "9d3f5bbe96a4a0e7187e3a6d99dced3b5ef9fb2533050011d34016cf56691d9b"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "stack of books, catalogs, and printed materials",
+      "name_ja": "書籍とカタログの束",
+      "function": "reading and information reference",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "books",
+        "name_en": "books",
+        "name_ja": "書籍",
+        "function": "study and reference, specifically on mechanical drawing and machining",
+        "materials": [
+          "paper",
+          "printed ink"
+        ],
+        "visible_condition": [
+          "used, but appears intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "catalogs_and_brochures",
+        "name_en": "catalogs and brochures",
+        "name_ja": "カタログとパンフレット",
+        "function": "advertising and product information",
+        "materials": [
+          "paper",
+          "printed ink"
+        ],
+        "visible_condition": [
+          "used, appears intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "paper",
+        "printed ink"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "used",
+        "no visible damage"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately A4 size based on visible documents"
+    },
+    "uncertain_characteristics": [
+      "whether any plastic covers or bindings are present on the books or catalogs",
+      "whether recycling marks exist on any of the materials"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "書籍",
+        "カタログ",
+        "パンフレット",
+        "印刷物",
+        "紙ごみ",
+        "雑誌"
+      ],
+      "component_terms_ja": [
+        "紙",
+        "印刷インク",
+        "本",
+        "冊子",
+        "カタログ冊子"
+      ],
+      "function_terms_ja": [
+        "読書",
+        "学習参考資料",
+        "製図学習",
+        "商品広告"
+      ],
+      "material_terms_ja": [
+        "紙",
+        "インク"
+      ],
+      "condition_terms_ja": [
+        "使用済み",
+        "破損なし",
+        "汚れなし"
+      ],
+      "general_rule_topics": [
+        "紙ごみの分別",
+        "リサイクルの方法",
+        "製本された書籍の処理"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "communication_record": [
+    {
+      "type": "correction",
+      "content": "stack of books, catelogs, and newspapers"
+    },
+    {
+      "type": "additional_context",
+      "content": "there is no plastic materials."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "stack of books, catalogs, and newspapers",
+      "name_ja": "書籍・カタログ・新聞の束",
+      "function": "reading, information reference, and news consumption",
+      "confidence": 0.9,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "books",
+        "name_en": "books",
+        "name_ja": "書籍",
+        "function": "study and reference, specifically on mechanical drawing and machining",
+        "materials": [
+          "paper",
+          "printed ink"
+        ],
+        "visible_condition": [
+          "used, but appears intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "catalogs_and_brochures",
+        "name_en": "catalogs and brochures",
+        "name_ja": "カタログとパンフレット",
+        "function": "advertising and product information",
+        "materials": [
+          "paper",
+          "printed ink"
+        ],
+        "visible_condition": [
+          "used, appears intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "newspapers",
+        "name_en": "newspapers",
+        "name_ja": "新聞",
+        "function": "daily news and information",
+        "materials": [
+          "paper",
+          "printed ink"
+        ],
+        "visible_condition": [
+          "used, appears intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "paper",
+        "printed ink"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "used",
+        "no visible damage"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": null
+    },
+    "uncertain_characteristics": [
+      "whether recycling marks exist on any of the materials"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "書籍",
+        "カタログ",
+        "パンフレット",
+        "新聞",
+        "印刷物",
+        "紙ごみ"
+      ],
+      "component_terms_ja": [
+        "紙",
+        "印刷インク",
+        "本",
+        "冊子",
+        "カタログ冊子",
+        "新聞紙"
+      ],
+      "function_terms_ja": [
+        "読書",
+        "学習参考資料",
+        "製図学習",
+        "商品広告",
+        "ニュース"
+      ],
+      "material_terms_ja": [
+        "紙",
+        "インク"
+      ],
+      "condition_terms_ja": [
+        "使用済み",
+        "破損なし",
+        "汚れなし"
+      ],
+      "general_rule_topics": [
+        "紙ごみの分別",
+        "リサイクルの方法",
+        "製本された書籍の処理",
+        "新聞紙の処理"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\nstack of books, catelogs, and newspapers\n\nthere is no plastic materials.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}

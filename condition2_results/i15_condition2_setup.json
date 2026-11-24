@@ -1,0 +1,157 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I15",
+  "created_at": "2026-09-19T23:45:50.237525+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I15.jpg",
+    "filename": "I15.jpg",
+    "sha256": "b77dac7d1f86e5c3249bdc726089c144cea5b48f7d2bfa05196c36e4f6c7e11b"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "ceramic coffee mug",
+      "name_ja": "陶器のコーヒーマグ",
+      "function": "Container for drinking beverages such as coffee or tea",
+      "confidence": 0.95,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "ceramic"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "intact",
+        "clean surface"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately 8-10 cm tall (typical mug size)"
+    },
+    "uncertain_characteristics": [
+      "Whether the mug is completely clean inside cannot be determined from this angle",
+      "Presence of any recycling marks on the bottom is not visible"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "コーヒーマグ",
+        "陶器製マグカップ",
+        "マグカップ",
+        "陶磁器"
+      ],
+      "component_terms_ja": [],
+      "function_terms_ja": [
+        "飲み物を入れる容器",
+        "食器"
+      ],
+      "material_terms_ja": [
+        "陶器",
+        "陶磁器"
+      ],
+      "condition_terms_ja": [
+        "割れなし",
+        "汚れなし"
+      ],
+      "general_rule_topics": [
+        "陶器の廃棄方法",
+        "割れ物の注意",
+        "食器の処分"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "communication_record": [
+    {
+      "type": "confirmation",
+      "content": "The initial interpretation was confirmed by the user."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "ceramic coffee mug",
+      "name_ja": "陶器のコーヒーマグ",
+      "function": "Container for drinking beverages such as coffee or tea",
+      "confidence": 0.95,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "ceramic"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "intact",
+        "clean surface"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately 8-10 cm tall (typical mug size)"
+    },
+    "uncertain_characteristics": [
+      "Whether the mug is completely clean inside cannot be determined from this angle",
+      "Presence of any recycling marks on the bottom is not visible"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "コーヒーマグ",
+        "陶器製マグカップ",
+        "マグカップ",
+        "陶磁器"
+      ],
+      "component_terms_ja": [],
+      "function_terms_ja": [
+        "飲み物を入れる容器",
+        "食器"
+      ],
+      "material_terms_ja": [
+        "陶器",
+        "陶磁器"
+      ],
+      "condition_terms_ja": [
+        "割れなし",
+        "汚れなし"
+      ],
+      "general_rule_topics": [
+        "陶器の廃棄方法",
+        "割れ物の注意",
+        "食器の処分"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}

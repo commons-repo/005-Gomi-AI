@@ -1,0 +1,249 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I7",
+  "created_at": "2026-09-19T20:54:09.854200+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I7.jpg",
+    "filename": "I7.jpg",
+    "sha256": "9fdb981a44c37962e65278f59a4992907182a871be7a7254356ab6b8e619da88"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "toothpaste tube",
+      "name_ja": "歯磨き粉チューブ",
+      "function": "holds and dispenses toothpaste",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "cap",
+        "name_en": "plastic cap",
+        "name_ja": "プラスチックキャップ",
+        "function": "seals the tube to prevent toothpaste from leaking",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [
+          "attached",
+          "undamaged"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "tube_body",
+        "name_en": "plastic toothpaste tube body",
+        "name_ja": "プラスチック製歯磨き粉チューブ本体",
+        "function": "holds the toothpaste",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [
+          "used",
+          "creased"
+        ],
+        "separable": false,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "plastic"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "creased",
+        "used"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately 12-15 cm length"
+    },
+    "uncertain_characteristics": [
+      "Quantity of toothpaste remaining inside the tube",
+      "Presence of any recycling mark such as プラ or PET"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "歯磨き粉チューブ",
+        "チューブ容器",
+        "歯磨き粉",
+        "包装容器"
+      ],
+      "component_terms_ja": [
+        "キャップ",
+        "プラスチックキャップ",
+        "チューブ本体",
+        "プラスチックチューブ"
+      ],
+      "function_terms_ja": [
+        "歯磨き粉を保持",
+        "歯磨き粉容器",
+        "チューブ入り製品"
+      ],
+      "material_terms_ja": [
+        "プラスチック",
+        "合成樹脂",
+        "包装材"
+      ],
+      "condition_terms_ja": [
+        "使用済み",
+        "中身残り不明",
+        "変形あり"
+      ],
+      "general_rule_topics": [
+        "プラスチック容器包装",
+        "中身の除去",
+        "分別ルール"
+      ]
+    },
+    "clarification": {
+      "required": true,
+      "question_en": "Is the toothpaste tube completely empty or does it still contain toothpaste inside?",
+      "question_ja": "この歯磨き粉チューブは中身が完全に空ですか、それともまだ中に歯磨き粉が残っていますか？",
+      "reason": "Determining if contents remain is important for disposal instructions.",
+      "missing_fact": "contents_remaining_status"
+    }
+  },
+  "communication_record": [
+    {
+      "type": "correction",
+      "content": "it is a plastic hand-cream tube. pura mark and recycling mark are there both for tube and cap. it is empty. i used totally."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "plastic hand-cream tube",
+      "name_ja": "プラスチック製ハンドクリームチューブ",
+      "function": "holds and dispenses hand cream",
+      "confidence": 0.98,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "cap",
+        "name_en": "plastic cap",
+        "name_ja": "プラスチックキャップ",
+        "function": "seals the tube to prevent hand cream from leaking",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [
+          "attached",
+          "undamaged"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [
+          "プラ",
+          "recycling mark"
+        ],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "tube_body",
+        "name_en": "plastic hand-cream tube body",
+        "name_ja": "プラスチック製ハンドクリームチューブ本体",
+        "function": "holds the hand cream",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [
+          "used",
+          "empty"
+        ],
+        "separable": false,
+        "contents_remaining": false,
+        "recycling_marks": [
+          "プラ",
+          "recycling mark"
+        ],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "plastic"
+      ],
+      "recycling_marks": [
+        "プラ",
+        "recycling mark"
+      ],
+      "condition": [
+        "used",
+        "empty"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": null
+    },
+    "uncertain_characteristics": [],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "ハンドクリームチューブ",
+        "プラスチックチューブ",
+        "チューブ容器",
+        "包装容器"
+      ],
+      "component_terms_ja": [
+        "キャップ",
+        "プラスチックキャップ",
+        "チューブ本体",
+        "プラスチックチューブ"
+      ],
+      "function_terms_ja": [
+        "ハンドクリームを保持",
+        "クリーム容器",
+        "チューブ入り製品"
+      ],
+      "material_terms_ja": [
+        "プラスチック",
+        "合成樹脂",
+        "包装材"
+      ],
+      "condition_terms_ja": [
+        "使用済み",
+        "中身空",
+        "変形なし"
+      ],
+      "general_rule_topics": [
+        "プラスチック容器包装",
+        "中身の除去",
+        "分別ルール"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\nit is a plastic hand-cream tube. pura mark and recycling mark are there both for tube and cap. it is empty. i used totally.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}
