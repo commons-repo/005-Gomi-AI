@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.1",
+  "purpose": "Resident-facing example illustrations for bag types and disposal methods.",
+  "source": {
+    "title": "Kitami City illustrated waste-disposal guidance",
+    "url": "https://www.city.kitami.lg.jp/administration/life/detail.php?content=13153",
+    "local_reference_pdf": "bag_images/bag_images.pdf"
+  },
+  "display_policy": {
+    "position": "after_textual_disposal_guidance",
+    "maximum_images_per_response": 2,
+    "avoid_duplicate_images": true,
+    "authoritative_content": "textual_disposal_guidance",
+    "note_en": "Example illustration for identifying the required bag or disposal method. Actual appearance may vary.",
+    "note_ja": "指定袋や排出方法を確認するための参考イラストです。実際の外観とは異なる場合があります。"
+  },
+  "illustrations": {
+    "designated_orange_bag": {
+      "image_path": "bag_images/1-orange.png",
+      "label_en": "Designated orange bag for burnable waste",
+      "label_ja": "燃やすごみ用の指定袋",
+      "category_ids": [
+        "burnable"
+      ],
+      "method_signals": [
+        "designated orange bag",
+        "orange kitami city bag",
+        "燃やすごみ袋",
+        "橙色袋",
+        "燈色袋"
+      ],
+      "selection_priority": 20,
+      "allow_category_fallback": true
+    },
+    "transparent_or_translucent_bag": {
+      "image_path": "bag_images/2-transparent.png",
+      "label_en": "Transparent or translucent collection bag",
+      "label_ja": "透明または半透明の袋",
+      "category_ids": [
+        "plastic_container_packaging",
+        "diapers",
+        "hazardous"
+      ],
+      "method_signals": [
+        "transparent or translucent bag",
+        "transparent bag",
+        "translucent bag",
+        "透明または半透明の袋",
+        "透明・半透明の袋",
+        "中が見える袋"
+      ],
+      "selection_priority": 20,
+      "allow_category_fallback": true
+    },
+    "paper_tied_with_string": {
+      "image_path": "bag_images/3-bundle tie.png",
+      "label_en": "Paper separated by type and tied with string",
+      "label_ja": "種類ごとに分けてひもで縛った紙類",
+      "category_ids": [
+        "recyclable"
+      ],
+      "method_signals": [
+        "tie securely with string",
+        "tied with string",
+        "tie with string",
+        "bundle with string",
+        "bundled with string",
+        "tie the books with string",
+        "tie books with string",
+        "ひもで縛る",
+        "ひもで縛って",
+        "ひもで縛って排出",
+        "ひもでしばる",
+        "ひもでしばって",
+        "ひもでしばって排出",
+        "紐で縛る",
+        "紐で縛って",
+        "紐で縛って排出",
+        "束ねて排出"
+      ],
+      "signal_sources": [
+        "preparation_steps"
+      ],
+      "require_method_signal": true,
+      "require_category_match": true,
+      "allow_category_fallback": false,
+      "selection_priority": 100
+    },
+    "designated_green_bag": {
+      "image_path": "bag_images/4-green.png",
+      "label_en": "Designated green bag for unburnable waste",
+      "label_ja": "燃やさないごみ用の指定袋",
+      "category_ids": [
+        "unburnable"
+      ],
+      "method_signals": [
+        "designated green bag",
+        "young-grass green kitami city bag",
+        "燃やさないごみ袋",
+        "若草色袋"
+      ],
+      "selection_priority": 20,
+      "allow_category_fallback": true
+    }
+  },
+  "selection_rules": [
+    {
+      "priority": 1,
+      "rule": "The tied-paper illustration requires recyclable category plus an explicit tying instruction in preparation text."
+    },
+    {
+      "priority": 2,
+      "rule": "Generic recyclable bag_or_method text cannot trigger the tied-paper illustration."
+    },
+    {
+      "priority": 3,
+      "rule": "Transparent-bag signals may select the transparent illustration when no exact tied-paper preparation instruction applies."
+    },
+    {
+      "priority": 4,
+      "rule": "Category fallback is disabled for tied paper and retained only for unambiguous bag categories."
+    },
+    {
+      "priority": 5,
+      "rule": "If no illustration is clearly compatible with verified guidance, display no illustration."
+    }
+  ]
+}
