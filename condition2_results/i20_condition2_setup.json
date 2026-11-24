@@ -1,0 +1,173 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I20",
+  "created_at": "2026-09-20T09:01:22.045420+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I20.jpg",
+    "filename": "I20.jpg",
+    "sha256": "fedb75339dce9f46c2e1529f7f693cabfe5df336833218161d1a80636172547d"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "AA alkaline batteries",
+      "name_ja": "単三形アルカリ乾電池",
+      "function": "Provide electrical power to devices",
+      "confidence": 0.95,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "metal",
+        "plastic",
+        "paper label"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "appears intact",
+        "used"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [
+        "alkaline battery"
+      ],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately 5 cm length per battery"
+    },
+    "uncertain_characteristics": [
+      "Whether the batteries are fully discharged or still have power",
+      "Whether the batteries have been removed from any device"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "乾電池",
+        "アルカリ電池",
+        "単三電池",
+        "電池"
+      ],
+      "component_terms_ja": [
+        "金属",
+        "プラスチックラベル"
+      ],
+      "function_terms_ja": [
+        "電力供給",
+        "携帯機器用電池"
+      ],
+      "material_terms_ja": [
+        "金属",
+        "プラスチック",
+        "紙"
+      ],
+      "condition_terms_ja": [
+        "使用済み",
+        "未開封不明"
+      ],
+      "general_rule_topics": [
+        "電池の処分",
+        "有害ごみ",
+        "小型充電式電池ではない"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "communication_record": [
+    {
+      "type": "confirmation",
+      "content": "The initial interpretation was confirmed by the user."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "AA alkaline batteries",
+      "name_ja": "単三形アルカリ乾電池",
+      "function": "Provide electrical power to devices",
+      "confidence": 0.95,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "metal",
+        "plastic",
+        "paper label"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "appears intact",
+        "used"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [
+        "alkaline battery"
+      ],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately 5 cm length per battery"
+    },
+    "uncertain_characteristics": [
+      "Whether the batteries are fully discharged or still have power",
+      "Whether the batteries have been removed from any device"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "乾電池",
+        "アルカリ電池",
+        "単三電池",
+        "電池"
+      ],
+      "component_terms_ja": [
+        "金属",
+        "プラスチックラベル"
+      ],
+      "function_terms_ja": [
+        "電力供給",
+        "携帯機器用電池"
+      ],
+      "material_terms_ja": [
+        "金属",
+        "プラスチック",
+        "紙"
+      ],
+      "condition_terms_ja": [
+        "使用済み",
+        "未開封不明"
+      ],
+      "general_rule_topics": [
+        "電池の処分",
+        "有害ごみ",
+        "小型充電式電池ではない"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}

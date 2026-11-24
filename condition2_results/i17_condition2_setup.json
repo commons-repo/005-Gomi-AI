@@ -1,0 +1,146 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I17",
+  "created_at": "2026-09-22T08:45:31.012898+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I17.jpg",
+    "filename": "I17.jpg",
+    "sha256": "cd98ff4763898dcb427e5b76cbd0f43d184ccadee80b9cb42fa0c332f9a17580"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "cardboard box for beverage bottles",
+      "name_ja": "飲料用段ボール箱",
+      "function": "Container for holding 12 beverage bottles",
+      "confidence": 0.95,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "corrugated cardboard"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "used",
+        "empty",
+        "slightly damaged top edges and corners"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately 30-40 cm height, 20-30 cm width and depth (based on typical beverage box size)"
+    },
+    "uncertain_characteristics": [
+      "Exact size and weight not measured",
+      "Whether it contained liquids or bottles recently",
+      "Presence of any internal dividers not visible from top view"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "段ボール箱",
+        "飲料用箱",
+        "空き箱",
+        "リサイクル可能段ボール"
+      ],
+      "component_terms_ja": [],
+      "function_terms_ja": [
+        "飲料容器収納",
+        "運搬用箱",
+        "梱包材"
+      ],
+      "material_terms_ja": [
+        "段ボール",
+        "紙素材"
+      ],
+      "condition_terms_ja": [
+        "使用済み",
+        "空箱",
+        "多少破損あり"
+      ],
+      "general_rule_topics": [
+        "段ボールのリサイクル",
+        "飲料用包装材の処理方法"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "communication_record": [
+    {
+      "type": "correction",
+      "content": "it is a cardboard box with 50cm length, 35cm width, and 30cm height. it is for carrying bottles. there are no internal dividers or any other materials inside."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "cardboard box for carrying bottles",
+      "name_ja": "ボトル運搬用段ボール箱",
+      "function": "Container for carrying bottles",
+      "confidence": 0.95,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "cardboard"
+      ],
+      "recycling_marks": [],
+      "condition": [],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately 50 cm length, 35 cm width, 30 cm height"
+    },
+    "uncertain_characteristics": [],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "段ボール箱",
+        "ボトル運搬用箱",
+        "紙箱"
+      ],
+      "component_terms_ja": [],
+      "function_terms_ja": [
+        "飲料容器収納",
+        "運搬用箱"
+      ],
+      "material_terms_ja": [
+        "段ボール",
+        "紙"
+      ],
+      "condition_terms_ja": [],
+      "general_rule_topics": []
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\nit is a cardboard box with 50cm length, 35cm width, and 30cm height. it is for carrying bottles. there are no internal dividers or any other materials inside.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}
