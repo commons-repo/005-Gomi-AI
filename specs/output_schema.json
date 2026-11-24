@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.1",
+  "result_status": "final",
+  "decision_mode": "direct_match",
+  "identified_item": {
+    "name_en": "",
+    "name_ja": "",
+    "confidence": 0.0,
+    "visible_characteristics": [],
+    "is_composite": false
+  },
+  "clarification": {
+    "required": false,
+    "question": null,
+    "question_en": null,
+    "question_ja": null,
+    "reason": null,
+    "missing_fact": null
+  },
+  "official_match": {
+    "matched_item_ja": "",
+    "match_type": "none",
+    "dictionary_record_id": "",
+    "source_page": null
+  },
+  "disposal": {
+    "category_id": "",
+    "category_ja": "",
+    "category_en": "",
+    "bag_or_method": "",
+    "preparation_steps": [],
+    "safety_warning": null
+  },
+  "components": [],
+  "reasoning": {
+    "decision_confidence": 0.0,
+    "reasoning_summary": "",
+    "supporting_record_ids": [],
+    "supporting_rule_sections": [],
+    "contradictory_evidence_found": false,
+    "contradictory_evidence_summary": null
+  },
+  "collection": {
+    "applicable": true,
+    "next_date": null,
+    "put_out_by": "08:30",
+    "service_area_id": null,
+    "service_area_name_en": "",
+    "service_area_name_ja": "",
+    "calendar_group_id": null
+  },
+  "component_collections": [],
+  "user_message": {
+    "language": "en",
+    "text": ""
+  },
+  "source_trace": {
+    "dictionary_used": false,
+    "general_rules_used": false,
+    "schedule_used": false,
+    "candidate_record_ids": [],
+    "general_rule_section_ids": []
+  },
+  "developer_details": {
+    "vision_result": null,
+    "evidence_packet": null,
+    "reasoning_result": null
+  }
+}

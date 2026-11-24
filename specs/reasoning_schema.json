@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "decision_status": "final",
+  "decision_mode": "direct_match",
+  "overall_item": {
+    "name_en": "",
+    "name_ja": "",
+    "description": ""
+  },
+  "components": [
+    {
+      "component_id": "",
+      "name_en": "",
+      "name_ja": "",
+      "material_or_function": "",
+      "category_id": "",
+      "category_ja": "",
+      "preparation_steps_ja": [],
+      "safety_warning_ja": null,
+      "supporting_record_ids": [],
+      "supporting_rule_sections": [],
+      "evidence_type": "direct_match",
+      "reasoning_summary": "",
+      "decision_confidence": 0.0
+    }
+  ],
+  "overall_decision": {
+    "single_category": true,
+    "category_id": "",
+    "category_ja": "",
+    "preparation_steps_ja": [],
+    "safety_warning_ja": null,
+    "supporting_record_ids": [],
+    "supporting_rule_sections": [],
+    "reasoning_summary": "",
+    "decision_confidence": 0.0
+  },
+  "clarification": {
+    "required": false,
+    "question_en": null,
+    "question_ja": null,
+    "reason": null,
+    "missing_fact": null
+  },
+  "evidence_review": {
+    "candidate_records_considered": [],
+    "general_rules_considered": [],
+    "contradictory_evidence_found": false,
+    "contradictory_evidence_summary": null
+  }
+}

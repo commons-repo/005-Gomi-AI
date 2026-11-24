@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "result_status": "analyzed",
+  "primary_object": {
+    "name_en": "",
+    "name_ja": "",
+    "function": "",
+    "confidence": 0.0,
+    "is_composite": false
+  },
+  "components": [
+    {
+      "component_id": "",
+      "name_en": "",
+      "name_ja": "",
+      "function": "",
+      "materials": [],
+      "visible_condition": [],
+      "separable": null,
+      "contents_remaining": null,
+      "recycling_marks": [],
+      "hazard_characteristics": []
+    }
+  ],
+  "visible_observations": {
+    "materials": [],
+    "recycling_marks": [],
+    "condition": [],
+    "remaining_contents_visible": false,
+    "battery_or_electrical_components": [],
+    "sharp_or_broken_parts": false,
+    "pressurized_container": false,
+    "estimated_size": null
+  },
+  "uncertain_characteristics": [],
+  "evidence_search_concepts": {
+    "overall_item_terms_ja": [],
+    "component_terms_ja": [],
+    "function_terms_ja": [],
+    "material_terms_ja": [],
+    "condition_terms_ja": [],
+    "general_rule_topics": []
+  },
+  "clarification": {
+    "required": false,
+    "question_en": null,
+    "question_ja": null,
+    "reason": null,
+    "missing_fact": null
+  }
+}
