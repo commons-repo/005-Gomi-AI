@@ -1,0 +1,234 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I8",
+  "created_at": "2026-09-20T19:21:30.931849+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I8.jpg",
+    "filename": "I8.jpg",
+    "sha256": "1f7570c73007f2c1ecd3bcc3e32892df683e84afd004a3866fe4e399360c9c90"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "styling foam aerosol can",
+      "name_ja": "整髪フォームのエアゾール缶",
+      "function": "holds and dispenses hair styling foam under pressure",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "body",
+        "name_en": "metal cylinder can",
+        "name_ja": "金属製シリンダー缶",
+        "function": "container body holding contents under pressure",
+        "materials": [
+          "metal"
+        ],
+        "visible_condition": [
+          "intact"
+        ],
+        "separable": false,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": [
+          "pressurized container"
+        ]
+      },
+      {
+        "component_id": "cap_and_nozzle",
+        "name_en": "plastic nozzle and cap",
+        "name_ja": "プラスチック製ノズルとキャップ",
+        "function": "dispensing the foam product",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [
+          "intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "metal",
+        "plastic"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "intact"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": true,
+      "estimated_size": "approximately 20 cm tall"
+    },
+    "uncertain_characteristics": [
+      "whether the can is empty or still contains foam",
+      "presence of any specific recycling marks",
+      "exact plastic type of nozzle and cap"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "整髪フォーム",
+        "エアゾール缶",
+        "スプレー缶",
+        "ヘアスタイリング剤"
+      ],
+      "component_terms_ja": [
+        "金属缶",
+        "プラスチックノズル",
+        "キャップ"
+      ],
+      "function_terms_ja": [
+        "ヘアスタイリング",
+        "フォーム剤噴射"
+      ],
+      "material_terms_ja": [
+        "金属",
+        "プラスチック"
+      ],
+      "condition_terms_ja": [
+        "内容物不明",
+        "圧力容器"
+      ],
+      "general_rule_topics": [
+        "スプレー缶の廃棄",
+        "圧力容器",
+        "中身の有無確認"
+      ]
+    },
+    "clarification": {
+      "required": true,
+      "question_en": "Is the aerosol can completely empty with no remaining foam inside?",
+      "question_ja": "エアゾール缶の中身は完全に空ですか？",
+      "reason": "Determining if contents remain is essential for correct disposal instructions.",
+      "missing_fact": "contents remaining status"
+    }
+  },
+  "communication_record": [
+    {
+      "type": "correction",
+      "content": "there is nothing inside. nothing is seperable (the nozzle). cap is not available. there is recycling mark or anything available as well."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "styling foam aerosol can",
+      "name_ja": "整髪フォームのエアゾール缶",
+      "function": "holds and dispenses hair styling foam under pressure",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "body",
+        "name_en": "metal cylinder can",
+        "name_ja": "金属製シリンダー缶",
+        "function": "container body holding contents under pressure",
+        "materials": [
+          "metal"
+        ],
+        "visible_condition": [
+          "intact"
+        ],
+        "separable": false,
+        "contents_remaining": false,
+        "recycling_marks": [],
+        "hazard_characteristics": [
+          "pressurized container"
+        ]
+      },
+      {
+        "component_id": "nozzle",
+        "name_en": "plastic nozzle",
+        "name_ja": "プラスチック製ノズル",
+        "function": "dispensing the foam product",
+        "materials": [
+          "plastic"
+        ],
+        "visible_condition": [
+          "intact"
+        ],
+        "separable": false,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "metal",
+        "plastic"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "intact"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": true,
+      "estimated_size": "approximately 20 cm tall"
+    },
+    "uncertain_characteristics": [
+      "exact plastic type of nozzle"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "整髪フォーム",
+        "エアゾール缶",
+        "スプレー缶",
+        "ヘアスタイリング剤"
+      ],
+      "component_terms_ja": [
+        "金属缶",
+        "プラスチックノズル"
+      ],
+      "function_terms_ja": [
+        "ヘアスタイリング",
+        "フォーム剤噴射"
+      ],
+      "material_terms_ja": [
+        "金属",
+        "プラスチック"
+      ],
+      "condition_terms_ja": [
+        "内容物なし",
+        "圧力容器"
+      ],
+      "general_rule_topics": [
+        "スプレー缶の廃棄",
+        "圧力容器",
+        "中身なし確認"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\nthere is nothing inside. nothing is seperable (the nozzle). cap is not available. there is recycling mark or anything available as well.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}

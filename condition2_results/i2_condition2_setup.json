@@ -1,0 +1,167 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I2",
+  "created_at": "2026-09-19T18:58:16.017049+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I2.jpg",
+    "filename": "I2.jpg",
+    "sha256": "f981b0fc6f221f546459556fa6c61fd1a89e1ea57d7ed942be1b3164b2a5c096"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "corrugated paper cup",
+      "name_ja": "段ボール紙のカップ",
+      "function": "disposable drinking cup for hot beverages",
+      "confidence": 0.95,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "corrugated paper",
+        "paper"
+      ],
+      "recycling_marks": [
+        "紙 (paper) recycling mark"
+      ],
+      "condition": [
+        "crushed",
+        "empty"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately small handheld cup size, about 7-10 cm in height"
+    },
+    "uncertain_characteristics": [
+      "Whether there is any internal plastic or wax coating inside the cup",
+      "Whether the cup contains any liquid or residue inside that is not visible",
+      "Whether the recycling mark applies to the entire cup or just the paper material"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "使い捨てカップ",
+        "紙コップ",
+        "段ボール紙カップ",
+        "飲料容器"
+      ],
+      "component_terms_ja": [
+        "段ボール紙",
+        "紙",
+        "カップ本体"
+      ],
+      "function_terms_ja": [
+        "飲み物の容器",
+        "使い捨て飲料カップ",
+        "ホットドリンクカップ"
+      ],
+      "material_terms_ja": [
+        "紙製容器",
+        "段ボール紙",
+        "リサイクルマーク（紙）"
+      ],
+      "condition_terms_ja": [
+        "空",
+        "潰れた",
+        "未使用感なし"
+      ],
+      "general_rule_topics": [
+        "使い捨てカップの分別",
+        "紙製容器のリサイクル",
+        "紙容器の汚れの扱い"
+      ]
+    },
+    "clarification": {
+      "required": true,
+      "question_en": "Is the cup empty and free of liquid or residue inside?",
+      "question_ja": "カップの中は空で液体や残留物はありませんか？",
+      "reason": "Determining if the cup is clean and empty affects disposal classification.",
+      "missing_fact": "cup content status"
+    }
+  },
+  "communication_record": [
+    {
+      "type": "correction",
+      "content": "this is just a paper coffee cup. no coating anywhere. cup is empty but not clean of course. there is no mark."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "paper coffee cup",
+      "name_ja": "紙のコーヒーカップ",
+      "function": "disposable drinking cup for coffee",
+      "confidence": 0.9,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "paper"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "empty",
+        "not clean"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": null
+    },
+    "uncertain_characteristics": [],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "紙コップ",
+        "使い捨てカップ",
+        "飲料容器"
+      ],
+      "component_terms_ja": [
+        "紙",
+        "カップ本体"
+      ],
+      "function_terms_ja": [
+        "飲み物の容器",
+        "使い捨て飲料カップ",
+        "コーヒーカップ"
+      ],
+      "material_terms_ja": [
+        "紙製容器"
+      ],
+      "condition_terms_ja": [
+        "空",
+        "汚れている"
+      ],
+      "general_rule_topics": [
+        "使い捨てカップの分別",
+        "紙製容器のリサイクル",
+        "紙容器の汚れの扱い"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\nthis is just a paper coffee cup. no coating anywhere. cup is empty but not clean of course. there is no mark.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}

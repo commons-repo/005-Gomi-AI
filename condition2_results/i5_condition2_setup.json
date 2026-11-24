@@ -1,0 +1,149 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I5",
+  "created_at": "2026-09-19T19:34:45.983591+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I5.jpg",
+    "filename": "I5.jpg",
+    "sha256": "61d2aa0f37a4d852eb4a53b1d0c4bde826677a8344664b8a36229fb6e0ce171f"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "plastic packaging pouch",
+      "name_ja": "プラスチック包装パウチ",
+      "function": "to contain individual servings of a product, likely a beverage creamer or coffee additive",
+      "confidence": 0.95,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "plastic film"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "empty",
+        "torn open"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "small, handheld pouch"
+    },
+    "uncertain_characteristics": [
+      "Exact plastic type and recycling mark are not visible",
+      "Whether any content residue remains inside"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "プラスチック包装",
+        "パウチ",
+        "コーヒーフレッシュ包装",
+        "小分け包装"
+      ],
+      "component_terms_ja": [],
+      "function_terms_ja": [
+        "食品包装",
+        "個包装",
+        "飲料添加物容器"
+      ],
+      "material_terms_ja": [
+        "プラスチック",
+        "フィルム包装"
+      ],
+      "condition_terms_ja": [
+        "空容器",
+        "破れた包装"
+      ],
+      "general_rule_topics": [
+        "プラスチック製容器包装",
+        "中身を使い切る",
+        "分別方法"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "communication_record": [
+    {
+      "type": "correction",
+      "content": "this is just plastic food packaging. nothing remains inside. clean."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "plastic food packaging",
+      "name_ja": "プラスチック食品包装",
+      "function": "to contain food items",
+      "confidence": 1.0,
+      "is_composite": false
+    },
+    "components": [],
+    "visible_observations": {
+      "materials": [
+        "plastic"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "empty",
+        "clean"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": null
+    },
+    "uncertain_characteristics": [],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "プラスチック包装",
+        "食品包装",
+        "空の包装"
+      ],
+      "component_terms_ja": [],
+      "function_terms_ja": [
+        "食品容器",
+        "包装"
+      ],
+      "material_terms_ja": [
+        "プラスチック"
+      ],
+      "condition_terms_ja": [
+        "空容器",
+        "清潔"
+      ],
+      "general_rule_topics": []
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\nthis is just plastic food packaging. nothing remains inside. clean.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}

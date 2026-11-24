@@ -1,0 +1,252 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I6",
+  "created_at": "2026-09-19T19:48:23.928011+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I6.jpg",
+    "filename": "I6.jpg",
+    "sha256": "253ce0daef6ebd4831ab85b0b38a9d0bfc12c693e9a81abe61770e73ebd69dae"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "Frying pan with detachable handle",
+      "name_ja": "取手の付いたフライパン",
+      "function": "Cooking food by frying using direct heat",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "body",
+        "name_en": "Frying pan body",
+        "name_ja": "フライパン本体",
+        "function": "Main cooking surface to hold food",
+        "materials": [
+          "metal (likely aluminum or steel)",
+          "non-stick coating (visible as black surface)"
+        ],
+        "visible_condition": [
+          "used",
+          "discolored",
+          "slightly worn non-stick coating"
+        ],
+        "separable": false,
+        "contents_remaining": false,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "handle",
+        "name_en": "Frying pan handle",
+        "name_ja": "フライパンの取手",
+        "function": "Hand grip to hold and manipulate pan",
+        "materials": [
+          "plastic or resin",
+          "metal attachment"
+        ],
+        "visible_condition": [
+          "attached with screws or rivets",
+          "appear intact"
+        ],
+        "separable": true,
+        "contents_remaining": false,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "metal",
+        "plastic or resin",
+        "non-stick coating"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "used",
+        "minor discoloration",
+        "no visible damage or cracks"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "standard frying pan size approximately 20-28 cm diameter based on typical kitchen item proportions"
+    },
+    "uncertain_characteristics": [
+      "Exact metal type of frying pan body",
+      "Presence of any recycling marks not visible from this angle",
+      "Whether the handle can be easily detached without tools"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "フライパン",
+        "調理器具",
+        "キッチン用品"
+      ],
+      "component_terms_ja": [
+        "フライパン本体",
+        "取手",
+        "プラスチック取手",
+        "金属本体"
+      ],
+      "function_terms_ja": [
+        "調理用",
+        "焼くための器具"
+      ],
+      "material_terms_ja": [
+        "金属製",
+        "プラスチック製",
+        "フッ素樹脂加工"
+      ],
+      "condition_terms_ja": [
+        "使用済み",
+        "汚れあり",
+        "焦げ付きあり"
+      ],
+      "general_rule_topics": [
+        "調理器具の処分",
+        "金属製品",
+        "プラスチック部品の分離"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "communication_record": [
+    {
+      "type": "correction",
+      "content": "this is a frying pan. handle cannot be seperated. there is no recycling mark anywhere."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "Frying pan",
+      "name_ja": "フライパン",
+      "function": "Cooking food by frying using direct heat",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "body",
+        "name_en": "Frying pan body",
+        "name_ja": "フライパン本体",
+        "function": "Main cooking surface to hold food",
+        "materials": [
+          "metal (likely aluminum or steel)",
+          "non-stick coating (visible as black surface)"
+        ],
+        "visible_condition": [
+          "used",
+          "discolored",
+          "slightly worn non-stick coating"
+        ],
+        "separable": false,
+        "contents_remaining": false,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "handle",
+        "name_en": "Frying pan handle",
+        "name_ja": "フライパンの取手",
+        "function": "Hand grip to hold and manipulate pan",
+        "materials": [
+          "plastic or resin",
+          "metal attachment"
+        ],
+        "visible_condition": [
+          "attached with screws or rivets",
+          "appear intact"
+        ],
+        "separable": false,
+        "contents_remaining": false,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "metal",
+        "plastic or resin",
+        "non-stick coating"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "used",
+        "minor discoloration",
+        "no visible damage or cracks"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "standard frying pan size approximately 20-28 cm diameter based on typical kitchen item proportions"
+    },
+    "uncertain_characteristics": [
+      "Exact metal type of frying pan body",
+      "Presence of any recycling marks not visible from this angle"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "フライパン",
+        "調理器具",
+        "キッチン用品"
+      ],
+      "component_terms_ja": [
+        "フライパン本体",
+        "取手",
+        "プラスチック取手",
+        "金属本体"
+      ],
+      "function_terms_ja": [
+        "調理用",
+        "焼くための器具"
+      ],
+      "material_terms_ja": [
+        "金属製",
+        "プラスチック製",
+        "フッ素樹脂加工"
+      ],
+      "condition_terms_ja": [
+        "使用済み",
+        "汚れあり",
+        "焦げ付きあり"
+      ],
+      "general_rule_topics": [
+        "調理器具の処分",
+        "金属製品",
+        "プラスチック部品の分離"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\nthis is a frying pan. handle cannot be seperated. there is no recycling mark anywhere.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}

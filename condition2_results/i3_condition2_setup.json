@@ -1,0 +1,255 @@
+{
+  "condition_id": "condition_2_verified_communication",
+  "item_id": "I3",
+  "created_at": "2026-09-19T19:09:51.574917+09:00",
+  "image": {
+    "path": "D:\\Codes\\GOMI-AI\\gomi-bot\\images\\I3.jpg",
+    "filename": "I3.jpg",
+    "sha256": "5a9db15448c8604ecbcf112dd1579c0c0f1c617cbe6dc72c0f43df77d7de8abe"
+  },
+  "area_id": "tabata",
+  "language_code": "en",
+  "fixed_experiment_datetime": "2026-09-17T12:00:00+09:00",
+  "models": {
+    "vision": "gpt-4.1-mini",
+    "text_recognition": "gpt-4.1-mini",
+    "reasoning": "gpt-4.1-mini",
+    "localization": "gpt-4.1-mini"
+  },
+  "initial_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "canned coffee beverage",
+      "name_ja": "缶コーヒー",
+      "function": "container for ready-to-drink coffee beverage",
+      "confidence": 0.95,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "body",
+        "name_en": "aluminum can body",
+        "name_ja": "アルミ缶本体",
+        "function": "container holding coffee beverage",
+        "materials": [
+          "aluminum"
+        ],
+        "visible_condition": [
+          "intact",
+          "sealed"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "label",
+        "name_en": "paper or plastic label",
+        "name_ja": "ラベル",
+        "function": "product branding and ingredient information",
+        "materials": [
+          "paper",
+          "plastic (possible)"
+        ],
+        "visible_condition": [
+          "intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "pull_tab",
+        "name_en": "aluminum pull tab",
+        "name_ja": "プルタブ",
+        "function": "can opening mechanism",
+        "materials": [
+          "aluminum"
+        ],
+        "visible_condition": [
+          "intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "aluminum",
+        "paper",
+        "plastic (possible)"
+      ],
+      "recycling_marks": [],
+      "condition": [
+        "intact",
+        "sealed"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": "approximately 185 ml can size"
+    },
+    "uncertain_characteristics": [
+      "whether the can contains any remaining liquid",
+      "presence of any recycling marks on can or label",
+      "exact material of the label (paper or plastic)"
+    ],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "缶コーヒー",
+        "缶飲料",
+        "アルミ缶"
+      ],
+      "component_terms_ja": [
+        "缶本体",
+        "プルタブ",
+        "ラベル"
+      ],
+      "function_terms_ja": [
+        "飲料容器",
+        "コーヒー飲料",
+        "飲料保存"
+      ],
+      "material_terms_ja": [
+        "アルミニウム",
+        "紙ラベル",
+        "プラスチックラベル"
+      ],
+      "condition_terms_ja": [
+        "未開封",
+        "中身不明",
+        "きれい"
+      ],
+      "general_rule_topics": [
+        "飲料缶の処理",
+        "リサイクル",
+        "分別方法"
+      ]
+    },
+    "clarification": {
+      "required": true,
+      "question_en": "Is the beverage can empty or does it still contain liquid?",
+      "question_ja": "缶の中身は空ですか、それとも液体がまだ入っていますか？",
+      "reason": "Determining if the can is empty affects the disposal instructions.",
+      "missing_fact": "status of contents inside the can"
+    }
+  },
+  "communication_record": [
+    {
+      "type": "correction",
+      "content": "aluminium coffee can. empty. there is no label on the can. there is recycling mark."
+    }
+  ],
+  "verified_interpretation": {
+    "schema_version": "2.0",
+    "result_status": "analyzed",
+    "primary_object": {
+      "name_en": "aluminum coffee can",
+      "name_ja": "アルミ缶コーヒー",
+      "function": "container for coffee beverage",
+      "confidence": 0.98,
+      "is_composite": true
+    },
+    "components": [
+      {
+        "component_id": "body",
+        "name_en": "aluminum can body",
+        "name_ja": "アルミ缶本体",
+        "function": "container holding coffee beverage",
+        "materials": [
+          "aluminum"
+        ],
+        "visible_condition": [
+          "intact",
+          "empty"
+        ],
+        "separable": true,
+        "contents_remaining": false,
+        "recycling_marks": [
+          "present"
+        ],
+        "hazard_characteristics": []
+      },
+      {
+        "component_id": "pull_tab",
+        "name_en": "aluminum pull tab",
+        "name_ja": "プルタブ",
+        "function": "can opening mechanism",
+        "materials": [
+          "aluminum"
+        ],
+        "visible_condition": [
+          "intact"
+        ],
+        "separable": true,
+        "contents_remaining": null,
+        "recycling_marks": [],
+        "hazard_characteristics": []
+      }
+    ],
+    "visible_observations": {
+      "materials": [
+        "aluminum"
+      ],
+      "recycling_marks": [
+        "present"
+      ],
+      "condition": [
+        "intact",
+        "empty"
+      ],
+      "remaining_contents_visible": false,
+      "battery_or_electrical_components": [],
+      "sharp_or_broken_parts": false,
+      "pressurized_container": false,
+      "estimated_size": null
+    },
+    "uncertain_characteristics": [],
+    "evidence_search_concepts": {
+      "overall_item_terms_ja": [
+        "アルミ缶",
+        "缶コーヒー",
+        "飲料缶"
+      ],
+      "component_terms_ja": [
+        "缶本体",
+        "プルタブ"
+      ],
+      "function_terms_ja": [
+        "飲料容器",
+        "コーヒー飲料",
+        "飲料保存"
+      ],
+      "material_terms_ja": [
+        "アルミニウム"
+      ],
+      "condition_terms_ja": [
+        "空",
+        "きれい",
+        "無ラベル"
+      ],
+      "general_rule_topics": [
+        "飲料缶の処理",
+        "リサイクル",
+        "分別方法"
+      ]
+    },
+    "clarification": {
+      "required": false,
+      "question_en": null,
+      "question_ja": null,
+      "reason": null,
+      "missing_fact": null
+    }
+  },
+  "frozen_user_context": "The Item Interpretation was verified by the user before repeated testing.\n\nConfirmed user information:\n\naluminium coffee can. empty. there is no label on the can. there is recycling mark.",
+  "runs_requested": 50,
+  "ground_truth_used": false,
+  "scoring_included": false
+}
